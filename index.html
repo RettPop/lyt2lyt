@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYR2LAT TERMINAL v1.0.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-background">
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+    
+    <main class="terminal-container">
+        <header>
+            <pre class="ascii-art">
+   ______     ______ ___  _        _  _____ 
+  / ___ \ \ / /  _ \__ \| |      / \|_   _|
+ | |   \ \ V /| |_) | ) | |     / _ \ | |  
+ | |___/ /| | |  _ < / /| |___ / ___ \| |  
+  \_____/ |_| |_| \_\/|_|_____/_/   \_\_|  
+            </pre>
+            <p class="status-line">TERMINAL v1.0.0 READY...</p>
+        </header>
+
+        <section class="input-section">
+            <div class="prompt">
+                <span class="user">user@cyr2lat</span>:<span class="path">~</span>$ <span class="label">INPUT_CYRILLIC</span>
+            </div>
+            <textarea id="cyrillic-input" spellcheck="false" placeholder="Введите кириллицу здесь..." autofocus></textarea>
+        </section>
+
+        <section class="output-section">
+            <div class="prompt">
+                <span class="user">user@cyr2lat</span>:<span class="path">~</span>$ <span class="label">OUTPUT_LATIN</span>
+            </div>
+            <div class="output-wrapper">
+                <textarea id="latin-output" readonly placeholder="Resulting latin will appear here..."></textarea>
+                <button id="copy-btn" class="terminal-btn">_COPY_TO_CLIPBOARD</button>
+            </div>
+        </section>
+
+        <footer>
+            <p class="footer-text">[SYSTEM]: USE AS PASSWORD GENERATOR. NO DATA LEAVES THIS MACHINE.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

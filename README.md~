@@ -1,0 +1,61 @@
+# CYR2LAT Terminal v1.0.0
+
+A retro, geeky, CRT-style web application for converting Cyrillic text to its US-EN keyboard layout equivalents. 
+
+## 🖥️ Overview
+
+**CYR2LAT** is a specialized tool designed to help users generate complex, hard-to-bruteforce passwords. It follows a simple but effective logic: the user types a memorable phrase in Russian while their physical keyboard (or mental model) is set to the US-EN layout. 
+
+For example, typing **"Зеленая КрышкаХ"** on a standard keyboard with US-EN mapping results in **"Prkryfz Ehsirf{"**.
+
+## 🔒 Privacy & Safety (Zero-Tracking)
+
+**CYR2LAT is strictly a client-side application.** Your security is our priority:
+
+- **No Data Tracking:** We do not use cookies, analytics, or any tracking scripts.
+- **No Data Persistence:** Your input is processed entirely in your browser's memory and is never saved to a database.
+- **No Network Requests:** Once the page is loaded, no data ever leaves your machine. It is 100% safe to use for generating sensitive strings.
+- **Open Source:** You can audit the code yourself—it's just a simple HTML, CSS, and JS implementation.
+
+## ✨ Features
+
+- **Real-time Conversion:** Instantly maps Cyrillic characters to their physical key counterparts.
+- **Full Layout Support:** Handles lowercase, uppercase, and special symbols (e.g., `Х` -> `{`, `Ж` -> `:`, `.` -> `/`).
+- **CRT Aesthetic:** Authentic retro terminal feel with scanlines, glowing text, and screen flicker.
+- **Privacy First:** Client-side only. No data is stored, logged, or sent to any server.
+- **One-Click Copy:** Quick copy functionality for your generated strings.
+
+## 🚀 Deployment
+
+This project is ready to be hosted on **GitHub Pages**.
+
+1. **Initialize Git:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: CYR2LAT Terminal"
+   ```
+
+2. **Push to GitHub:**
+   Create a new repository on GitHub and run:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/cyr2lat.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Enable Pages:**
+   - Go to your repository **Settings** > **Pages**.
+   - Under **Build and deployment**, set the source to **Deploy from a branch**.
+   - Select the `main` branch and the `/ (root)` folder.
+   - Click **Save**.
+
+## 🛠️ Tech Stack
+
+- **Vanilla HTML5**
+- **CSS3** (Custom CRT effects & Animations)
+- **ES6+ JavaScript**
+
+## 📜 License
+
+This project is open-source and free to use.
